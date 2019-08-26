@@ -43,7 +43,7 @@
 	                $(this).addClass('active');
 	                return false;
 	            });
-	            function setPortfolio() { 
+	            function setPortfolio() {
 	                setColumns();
 	                $container.isotope('reLayout');
 	            }
@@ -64,4 +64,4 @@
 	            };
 	        isotope();
 	        $(window).smartresize(isotope);
-	    }(jQuery));
+	    });

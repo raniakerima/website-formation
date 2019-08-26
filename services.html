@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">   
@@ -61,80 +61,24 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logos/logosigscanok.png" alt="image"></a>
+                    <a class="navbar-brand" href="index.html"><img src="images/logos/logolong.png" alt="image" class="logoheader"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="active" href="index.html">Accueil</a></li>
-                        <li><a href="services.html">Solution</a></li>
-                        <li><a href="portfolio.html">Produits</a></li>
-                        <!--<li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>-->
+                        <li class="main"><a href="services.html">Système Sigscan</a> <ul class="main-content">
+                            <li><a href="#fonctions"> Indoor Tracking</a></li>
+                            <li><a href="#technology">Fonctionnement</a></li>
+                            <li><a href="#logiciel">Matériel</a></li>
+                            <li><a href="">Cas d'utilisation</a></li>
+                        </ul></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="pricing.html">Démarrer la démo</a></li>
+                        <li><a href="https://app.sigscan.eu">Accéder à Sigscan</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-	<!--<div class="top-bar">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-6 col-sm-6">
-					<div class="left-top">
-						<div class="email-box">
-							<a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> youremail@gmail.com</a>
-						</div>
-						<div class="phone-box">
-							<a href="tel:1234567890"><i class="fa fa-phone" aria-hidden="true"></i> +1 234 567 890</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-6">
-					<div class="right-top">
-						<div class="social-box">
-							<ul>
-								<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-rss-square" aria-hidden="true"></i></a></li>
-							<ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-    <header class="header header_style_01">
-        <nav class="megamenu navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" alt="image"></a>
-                </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about-us.html">About us</a></li>
-                        <li><a class="active" href="services.html">Our Services</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="features.html">Features</a></li>
-                        <li><a href="testimonials.html">Testimonials</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
-						<li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>-->
 
    	<div class="banner-area banner-bg-1">
 		<div class="container">
@@ -153,7 +97,11 @@
 	</div>
 
     <div id="about" class="section wb">
-        <div class="container">
+        <div class="container" id="fonctions">
+            <div class="message-box">
+                <h4>Solution</h4>
+                <h2>Les fonctionnalités</h2>
+            </div>
            <div class="row text-center">
 				<div class="col-md-3 col-sm-6">
 					<div class="about-item">
@@ -181,11 +129,11 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="about-item">
 						<div class="about-icon">
-							<span class="icon"><img src="uploads/icosur.png" alt=""></span>
+							<span class="icon"><img src="uploads/analyse.png" alt="" class="service2"></span>
 						</div>
 						<div class="about-text">
-							<h3> <a href="#">Surveillance </a></h3>
-							<p>Possibiité de reccueillir les mouvements d'un objet dans une zone pour en analyser sa trajectoire
+							<h3> <a href="#">Analyse </a></h3>
+							<p>Possibiité d'analyser la trajectoire d'un objet, le flux, les stocks...
                             </p>
 						</div>
 					</div>
@@ -193,11 +141,11 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="about-item">
 						<div class="about-icon">
-							<span class="icon"><img src="uploads/logiciel.png" alt=""></span>
+							<span class="icon"><img src="uploads/logiciel.png" alt="" class="service3"></span>
 						</div>
 						<div class="about-text">
-							<h3> <a href="#">Logiciel </a></h3>
-							<p>application mobile andoid indiquant des instructions d'orientation pas à pas. </p>
+							<h3> <a href="#">Interfaces </a></h3>
+							<p>L'application mobile andoid/ios indique des instructions d'orientation. </p>
 						</div>
 					</div>
 				</div>
@@ -213,26 +161,25 @@
                 <div class="col-md-6">
                     <div class="message-box">
                         <h4>Solution</h4>
-                        <h2>SIGSCAN système de géolocalisation indoor</h2>
+                        <h2>A quoi sert le système Indoor Tracking ?</h2>
 
                         <p>La géolocalisation indoor est une technique qui permet de localiser en temps réel des objets dans un complexe industriel, une usine, un entrepôt… Grâce aux nouveaux outils de mobilité : smartphone, tablette, wifi, bluetooth, bluetooth low energy… les utilisateurs peuvent se repérer facilement à l’intérieur d’un bâtiment. Ces informations peuvent être utilisées également par les propriétaires de site pour suivre le parcours des objets rattachés à un beacons en temps réel.
                             Le système de géolocalisation indoor permet de connaître avec précision plus ou moins grande le positionnement d’un objet dans un lieux  où l’accès aux satellites et les données GPS ne sont pas disponibles.
                             Sigscan est une solution de géolocalisation indoor basée sur le Bleutooth Low Energy (BLE).
 
                         </p>
-                        <!--                        <a href="#services" class="btn btn-light btn-radius btn-brd grd1">Learn More</a>-->
+
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
                 <div class="col-md-6">
                     <div class="post-media wow fadeIn">
                         <img src="uploads/localisation3.png" alt="" class="img-responsive img-rounded">
-                        <!--<a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>-->
                     </div><!-- end media -->
                 </div><!-- end col -->
             </div><!-- end row -->
 
-            <hr class="hr1">
+            <hr class="hr1" id="technology">
 
             <div class="row">
                 <div class="col-md-6">
@@ -243,228 +190,197 @@
 
                 <div class="col-md-6">
                     <div class="message-box">
-<!--                        <h4>Qui sommes nous ?</h4>-->
                         <h2>Technologie utilisée</h2>
-                        <!--<p class="lead">Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus. Sed a tellus quis mi rhoncus dignissim.</p>-->
-                        <p>
-                            Sigscan est une solution de géolocalisation indoor basée sur le Bleutooth Low Energy (BLE). La technologie BLE consomme moins d'énergie et diffuse des ondes radios qui peuvent aller au delà de 100 mètres pour certains beacons. Ils fonctionnent sur batterie allant de 2 à 8 ans sans avoir à accéder à une source d'alimentation externe. Le BLE est surtout utilisé dans le transfert périodique de petites quantités de données à courte distance pour récupérer n’importe quel type d’information légère, comme l’heure, la température, l’endroit où il a été vu pour la dernière fois…
-                            La connexion n’est pas continue et c’est notamment grâce à cela qu’il consomme très peu d’énergie. Aucune autre technologie n’offre autant compatibilité avec des millions de smartphones, tablettes ou PC. La plupart des smartphones et tablettes conçus depuis 2012 sont équipés de la technologie BLE. BLE est la technologie la plus adéquate pour communiquer et transmettre des données rapidement et facilement entre les différents objets connectés.
-                            BLE est la technologie la plus adéquate pour communiquer et transmettre des données rapidement et facilement entre les différents objets connectés. <br>
-                            Les antennes Gateway BLE assurent une lecture en continue des informations transmises par les périphériques bluetooth BLE environnant afin de transmettre en wifi/ethernet vers un serveur local ou un cloud. <br>
-                            Les beacons BLE sont détectés par les antennes Gateway qui peuvent couvrir 20 à 50 mètres de zone. Les beacons renvoient des données à l’antenne. Les informations peuvent être transmises par les antennes Gateway vers des serveurs ou cloud de type TCP/HTTP… <br>
-                            La géolocalisation indoor est une technique qui permet de localiser en temps réel des objets dans un complexe industriel, une usine, un entrepôt… Grâce aux nouveaux outils de mobilité : smartphone, tablette, wifi, bluetooth, bluetooth low energy… les utilisateurs peuvent se repérer facilement à l’intérieur d’un bâtiment. Ces informations peuvent être utilisées également par les propriétaires de site pour suivre le parcours des objets rattachés à un beacons en temps réel.
+                        <p>Sigscan est une solution de géolocalisation indoor basée sur le Bleutooth Low Energy (BLE). La technologie BLE consomme moins d'énergie et diffuse des ondes qui peuvent aller au delà de 100 mètres pour certains beacons. Ils fonctionnent sur batterie allant de 2 à 8 ans. Le BLE est surtout utilisé dans le transfert de petites quantités de données à courte distance pour récupérer des information légères, comme l’heure, la température, la position… La connexion n’est pas continue, c’est grâce à cela qu’il consomme très peu d’énergie. Cette technologie est compatible avec des millions de smartphones, tablettes ou PC. La plupart des smartphones et tablettes conçus depuis 2012 sont équipés de la technologie BLE.Cette technologie est la plus adéquate pour communiquer et transmettre des données rapidement et facilement entre les différents objets connectés. Les antennes Gateway BLE assurent une lecture en continue des informations transmises par les périphériques bluetooth BLE environnant afin de transmettre en wifi/ethernet vers un serveur local ou un cloud.
+                            Les antennes peuvent couvrir 20 à 50 mètres de zone. Les beacons renvoient des données à l’antenne.<br>
+                            L’Indoor asset tracking est une technique qui permet de localiser en temps réel des objets dans un complexe industriel, une usine, un entrepôt… Grâce aux nouveaux outils de mobilité : smartphone, tablette, wifi, bluetooth, bluetooth low energy… les utilisateurs peuvent se repérer facilement à l’intérieur d’un bâtiment. Ces informations peuvent être utilisées également par les propriétaires de site pour suivre le parcours des objets rattachés à un beacons en temps réel.
                         </p>
-                        <!--                        <a href="#services" class="btn btn-light btn-radius btn-brd grd1">Learn More</a>-->
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
             </div><!-- end row -->
 
-            <hr class="hr1">
+            <hr class="hr1" id="logiciel">
 
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">
-                        <h4>Solution</h4>
-                        <h2>Logiciel</h2>
+                        <h4>Matériel</h4>
+                        <h2>Interface Web<br>Application Android/Ios <br>Produits</h2>
 
                         <p>Dans la gestion d’un parc de stockage comme en gestion de production, la localisation des composants est vitale pour le gain de temps de chaque opération.
                             La visibilité d’avancement est donc un réel facteur d’amélioration de la production.
-                            À ce jour, les solutions de géolocalisation Indoor présentes sur le marché ne sont pas acceptables pour les industriels, principalement pour des raisons de coûts des infrastructures nécessaires à leur mise en place et des retours sur investissement insuffisants.
                         </p>
-                        <!--                        <a href="#services" class="btn btn-light btn-radius btn-brd grd1">Learn More</a>-->
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
                 <div class="col-md-6">
                     <div class="post-media wow fadeIn">
                         <img src="uploads/logiciel7.png" alt="" class="img-responsive img-rounded">
-                        <!--                        <a href="http://www.youtube.com/watch?v=nrJtHemSPW4" data-rel="prettyPhoto[gal]" class="playbutton"><i class="flaticon-play-button"></i></a>-->
                     </div><!-- end media -->
                 </div><!-- end col -->
             </div><!-- end row -->
 
+            <div class="col-md-12">
+                <a href="#interface" data-scroll class="btn btn-light btn-radius btn-brd view" onclick="afficher()">Voir plus</a>
+                <div id="interface"><h2 class="interfaces">Les interfaces</h2>
+                    <div class="row">
+                    <img src="uploads/interface1.png" alt="" class="interfaces col-md-6 img-responsive">
+                    <img src="uploads/interface2.png" alt="" class="interfaces col-md-6 img-responsive">
+                    </div>
+                    <div class="row">
+                    <img src="uploads/interface3.png" alt="" class="interfaces col-md-6 img-responsive">
+                    <img src="uploads/interface4.png" alt="" class="interfaces col-md-6 img-responsive">
+                    </div>
+                    <div class="row">
+                    <img src="uploads/interface5.png" alt="" class="interfaces col-md-6 img-responsive">
+                    <img src="uploads/interface6.png" alt="" class="interfaces col-md-6 img-responsive">
+                    </div>
+                </div>
+            </div>
         </div><!-- end container -->
     </div><!-- end section -->
 
-	<!--<div id="services" class="parallax section lb">
+    <hr class="invis">
+
+    <div id="beacon" class="col-md-12">
         <div class="container">
-            <div class="section-title text-center">
-                <h3>Our Service</h3>
-                <p class="lead">Our Service unlimited solutions to all your business needs. in the installation package we prepare search engine optimization, social media support, we provide corporate identity and graphic design services.</p>
-            </div>&lt;!&ndash; end title &ndash;&gt;
+            <div class="message-box">
+                <h2>Les produits</h2>
+                <p>Pyrénées Software ne fabrique pas les beacons mais est en étroite relation avec des fournisseurs vous assurant des modèles qui répondent au mieux à vos besoins.</p>
+            </div><!-- end title -->
+        </div><!-- end container -->
 
-            <div class="owl-services owl-carousel owl-theme">
-                <div class="service-widget">
-                    <div class="post-media wow fadeIn">
-                        <a href="uploads/service_01.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="uploads/service_01.jpg" alt="" class="img-responsive img-rounded">
+        <div id="da-thumbs" class="da-thumbs portfolio">
+            <div class="post-media pitem item-w1 item-h1 cat2 col-md-4">
+                <a href="uploads/beaconcard.png" data-rel="prettyPhoto[gal]">
+                    <img src="uploads/beaconcard.png" alt="" class="img-responsive">
+                    <div>
+                        <h3>Beacon carte bancaire<small> <br>
+                            non waterproof <br>
+                            Batterie : Pile (18 mois) non remplaçable <br>
+                            Bluetooth : nRF52 <br>
+                            taille : 54 x 85 x 4.3 mm <br>
+                        </small></h3>
                     </div>
-					<div class="service-dit">
-						<h3>Smart Swatch Editions</h3>
-						<p>Aliquam sagittis ligula et sem lacinia, ut facilisis enim sollicitudin. Proin nisi est, convallis nec purus vitae, iaculis posuere sapien. Cum sociis natoque.</p>
-					</div>
-                </div>
-                &lt;!&ndash; end service &ndash;&gt;
-
-                <div class="service-widget">
-                    <div class="post-media wow fadeIn">
-                        <a href="uploads/service_02.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="uploads/service_02.jpg" alt="" class="img-responsive img-rounded">
-                    </div>
-					<div class="service-dit">
-						<h3>Web UI Kit Design</h3>
-						<p>Duis at tellus at dui tincidunt scelerisque nec sed felis. Suspendisse id dolor sed leo rutrum euismod. Nullam vestibulum fermentum erat. It nam auctor. </p>
-					</div>
-                </div>
-                &lt;!&ndash; end service &ndash;&gt;
-
-                <div class="service-widget">
-                    <div class="post-media wow fadeIn">
-                        <a href="uploads/service_03.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="uploads/service_03.jpg" alt="" class="img-responsive img-rounded">
-                    </div>
-					<div class="service-dit">
-						<h3>Mobile Optimization</h3>
-						<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet lacus vitae massa sodales aliquam at eget quam. Integer ultricies et magna quis accumsan.</p>
-					</div>
-                </div>
-                &lt;!&ndash; end service &ndash;&gt;
-
-                <div class="service-widget">
-                    <div class="post-media wow fadeIn">
-                        <a href="uploads/service_04.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="flaticon-unlink"></i></a>
-                        <img src="uploads/service_04.jpg" alt="" class="img-responsive img-rounded">
-                    </div>
-					<div class="service-dit">
-						<h3>Digital Design for Mac</h3>
-						<p>Praesent in neque congue sapien lobortis faucibus id eget erat. <br>Pellentesque maximus rutrum felis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-					</div>
-                </div>
-                &lt;!&ndash; end service &ndash;&gt;
-            </div>&lt;!&ndash; end row &ndash;&gt;
-
-            <hr class="hr1">
-
-            <div class="text-center">
-                <a data-scroll href="#portfolio" class="btn btn-light btn-radius btn-brd">View Our Portfolio</a>
+                </a>
             </div>
-        </div>&lt;!&ndash; end container &ndash;&gt;
-    </div>&lt;!&ndash; end section &ndash;&gt;-->
+            <div class="post-media pitem item-w1 item-h1 cat1 col-md-4" >
+                <a href="uploads/beaconrond.png" data-rel="prettyPhoto[gal]" class="" >
+                    <img src="uploads/beaconrond.png" alt="" class="img-responsive rond " >
+                    <div id="beacon3">
+                        <h3>Beacon mini rond<small> <br>
+                            non waterproof <br>
+                            Batterie CR2477 (40 mois) remplaçabe <br>
+                            Bluetooth : nRF51822 <br>
+                            taille : 11 x Ø 52.6 mm <br>
+                        </small></h3>
+                    </div>
+                </a>
+            </div>
+            <div class="post-media pitem item-w1 item-h1 cat4 col-md-4">
+                <a href="uploads/beaconcreditcard.png" data-rel="prettyPhoto[gal]">
+                    <img src="uploads/beaconcreditcard.png" alt="" class="img-responsive">
+                    <div>
+                        <h3>Beacon carte bancaire<small> <br>
+                            Waterproof : IP67 étendu à 100m <br>
+                            Batterie : 3V Lithium polymer (60 mois) non remplaçable <br>
+                            bluetooth : nRF52 <br>
+                            transmission : 100m <br>
+                            taille : 54,1 x 85.6 x 4mm <br>
+                        </small></h3>
+                    </div>
+                </a>
+            </div>
+            <div class="post-media pitem item-w1 item-h1 cat2 col-md-4">
+                <a href="uploads/beacontemperature.png" data-rel="prettyPhoto[gal]">
+                    <img src="uploads/beacontemperature.png" alt="" class="img-responsive rond">
+                    <h5>Prochainement</h5>
+                    <div>
+                        <h3>Beacon température<small><br>
+                            Waterproof : 900m <br>
+                            batterie : 2x CR2477 (non comprises) remplaçables <br>
+                            transmission : 25-50m <br>
+                            taille : 39 x 39 x 15mm <br>
+                        </small></h3>
+                    </div>
+                </a>
+            </div>
+            <div class="post-media pitem item-w1 item-h1 cat3 col-md-4">
+                <a href="uploads/antennebeacon.png" data-rel="prettyPhoto[gal]">
+                    <img src="uploads/antennebeacon.png" alt="" class="img-responsive" style="max-width: 70%;">
+                    <div>
+                        <h3>Antenne Gateway <small></small></h3>
+                    </div>
+                </a>
+            </div>
 
-    <!--<div id="testimonials" class="parallax section db parallax-off" style="background-image:url('uploads/parallax_03.jpg');">
+        </div>
+
+        <div class="section wb col-md-12">
+            <div class="container">
+                <div class="section-title text-center">
+                    <p class="justify">
+                        ⦁	Les « Beacons » (balises) Bluetooth qui sont les systèmes à géolocaliser : Ils existent sur le marché en différents formats.<br>
+                        ⦁	Ils sont autonomes et fonctionnent avec des piles remplaçable ou pas (selon les modèles) ayant un autonomie pouvant aller jusqu’à 3 ans (selon les cas d’utilisation) <br>
+                        ⦁	Les antennes « Gateways » Bluetooth, à installer aux endroits stratégiques d’un bâtiment, qui réceptionnent les signaux Bluetooth et les retransmettent par Wifi/Ethernet/CPL à un serveur dédié (Data Retriever) installé chez le Client ou sur le Cloud de Pyrénées Software.<br>
+                        ⦁	Un serveur de calcul « Data Retriever » traitant les signaux Bluetooth qui lui sont transmis et calculant les positions des beacons <br>
+                        ⦁	Une base de données central « Back-End », en charge de stocker toutes les données, les positions des objets, la configuration du système … <br>
+                        ⦁	Une interface Web « Front-End » permettant à l’utilisateur de géolocaliser visuellement sur une carte du bâtiment les objets recherchés depuis son ordinateur. <br>
+                        ⦁	Une application Mobile « Android / iOS » permettant à un utilisateur de rechercher un objet sur le terrain avec son téléphone ou sa tablette
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <hr class="hr1">
+
+    <div id="utilisation" class="section wb col-md-12">
         <div class="container">
-            <div class="section-title text-center">
-                <h3>Testimonials</h3>
-                <p class="lead">We thanks for all our awesome testimonials! There are hundreds of our happy customers! <br>Let's see what others say about GoodWEB Solutions website template!</p>
-            </div>&lt;!&ndash; end title &ndash;&gt;
-
             <div class="row">
-                <div class="col-md-12 col-sm-12">
-                    <div class="testi-carousel owl-carousel owl-theme">
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_01.png" alt="" class="img-responsive alignleft">
-                                <h4>James Fernando <small>- Manager of Racer</small></h4>
-                            </div>
-                            &lt;!&ndash; end testi-meta &ndash;&gt;
-                        </div>
-                        &lt;!&ndash; end testimonial &ndash;&gt;
+                <div class="message-box">
+                <h4>Utilisation</h4>
+                    <h2>Les différents cas d'utilisation :</h2></div>
+                <div class="col-md-6">
+                    <div class="message-box">
+                        <h3>Entrepot logistique</h3>
+                        <p>Dans un entrepôt logistique SigScan va vous accompagner pour : <br>
+                            - accroître la performance de l’entreprise (gain de temps et prodductivité)<br>
+                            - connaître les limites de la zone de travail et des ressources<br>
+                            - maîtriser le terrain c’est-à-dire ranger et sécuriser la zone afin qu’elle soit propre pour détecter la moindre anomalie.<br>
+                            - étudier le processus (suivre le déplacement des objets)  : analyse des flux <br>
+                            - sécuriser les éléments entrant dans l'entrepôt et sortant de l'entrepôt <br>
+                            - indiquer les écarts de performances, les problèmes à résoudre, les actions en cours<br>
+                            - connaître ses stocks<br>
+                            - Rendre les équipes autonomes <br>
+                            - Améliorer des enjeux stratégiques et vos processus industriels.
 
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_02.png" alt="" class="img-responsive alignleft">
-                                <h4>Jacques Philips <small>- Designer</small></h4>
-                            </div>
-                            &lt;!&ndash; end testi-meta &ndash;&gt;
-                        </div>
-                        &lt;!&ndash; end testimonial &ndash;&gt;
-
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_03.png" alt="" class="img-responsive alignleft">
-                                <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                            </div>
-                            &lt;!&ndash; end testi-meta &ndash;&gt;
-                        </div>
-                        &lt;!&ndash; end testimonial &ndash;&gt;
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Wonderful Support!</h3>
-                                <p class="lead">They have got my project on time with the competition with a sed highly skilled, and experienced & professional team.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_01.png" alt="" class="img-responsive alignleft">
-                                <h4>James Fernando <small>- Manager of Racer</small></h4>
-                            </div>
-                            &lt;!&ndash; end testi-meta &ndash;&gt;
-                        </div>
-                        &lt;!&ndash; end testimonial &ndash;&gt;
-
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Awesome Services!</h3>
-                                <p class="lead">Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you completed.</p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_02.png" alt="" class="img-responsive alignleft">
-                                <h4>Jacques Philips <small>- Designer</small></h4>
-                            </div>
-                            &lt;!&ndash; end testi-meta &ndash;&gt;
-                        </div>
-                        &lt;!&ndash; end testimonial &ndash;&gt;
-
-                        <div class="testimonial clearfix">
-                            <div class="desc">
-                                <h3><i class="fa fa-quote-left"></i> Great & Talented Team!</h3>
-                                <p class="lead">The master-builder of human happines no one rejects, dislikes avoids pleasure itself, because it is very pursue pleasure. </p>
-                            </div>
-                            <div class="testi-meta">
-                                <img src="uploads/testi_03.png" alt="" class="img-responsive alignleft">
-                                <h4>Venanda Mercy <small>- Newyork City</small></h4>
-                            </div>
-                            &lt;!&ndash; end testi-meta &ndash;&gt;
-                        </div>&lt;!&ndash; end testimonial &ndash;&gt;
-                    </div>&lt;!&ndash; end carousel &ndash;&gt;
-                </div>&lt;!&ndash; end col &ndash;&gt;
-            </div>&lt;!&ndash; end row &ndash;&gt;
-
-            <hr class="hr1">
-
-            <div class="row logos">
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="uploads/logo_01.png" alt="" class="img-repsonsive"></a>
+                        </p>
+                        <img src="uploads/warehouse.jpg" alt="" class="col-md-10 img-responsive">
+                    </div>
                 </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="uploads/logo_02.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="uploads/logo_03.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="uploads/logo_04.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="uploads/logo_05.png" alt="" class="img-repsonsive"></a>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
-                    <a href="#"><img src="uploads/logo_06.png" alt="" class="img-repsonsive"></a>
-                </div>
-            </div>&lt;!&ndash; end row &ndash;&gt;
+                <div class="col-md-6">
+                    <div class="message-box">
+                        <h3>Usine de production</h3>
+                        <p>Dans une usine de fabrication SigScan va vous accompagner pour : <br>
+                            - augmenter la productivité au sein de la chaîne de production<br>
+                            - connaître les limites des ateliers de travail et des objets en cours de fabrication <br>
+                            - sécuriser la zone de production pour détecter la moindre anomalie  (vérifier que les objets ne sortent pas de la chaîne de production). <br>
+                            - étudier le processus : analyse de la productivité<br>
+                            - sécuriser les éléments entrant dans l'entrepôt et sortant de l'entrepôt <br>
+                            - indiquer les actions en cours <br>
+                            - Rendre les équipes autonomes <br>
+                            - améliorer des enjeux stratégiques
 
-        </div>&lt;!&ndash; end container &ndash;&gt;
-    </div>--><!-- end section -->
+                        </p>
+                        <img src="uploads/fabrication.jpg" alt="" class="col-md-12 img-responsive">
+                    </div>
+                </div>
+            </div><!-- end row -->
+        </div>
+    </div>
+
+    <hr class="hr1">
 
     <footer class="footer">
         <div class="container">
@@ -472,7 +388,7 @@
                 <div class="col-md-4 col-sm-4 col-xs-12">
                     <div class="widget clearfix">
                         <div class="widget-title">
-                            <img src="images/logos/sigblok.png" alt="" />
+                            <img src="images/logos/logolongbl.png" alt="" />
                         </div>
                         <p> Pour faciliter la logistique et le suivi qualité, SIGSCAN a imaginé un système permettant de localiser un ensemble d’objets au sein d’un bâtiment. La technologie Bluetooth rend cette solution personnalisable et accessible au plus grand nombre.</p>
                     </div><!-- end clearfix -->
@@ -487,10 +403,8 @@
                         <ul class="footer-links hov">
                             <li><a href="index.html">Accueil <span class="icon icon-arrow-right2"></span></a></li>
 							<li><a href="services.html">Solution <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="portfolio.html">Produits <span class="icon icon-arrow-right2"></span></a></li>
 							<li><a href="contact.html">Contact <span class="icon icon-arrow-right2"></span></a></li>
-							<li><a href="#">Démarrer la démo<span class="icon icon-arrow-right2"></span></a></li>
-							<!--<li><a href="#">Contact <span class="icon icon-arrow-right2"></span></a></li>-->
+							<li><a href="#">Accéder à SigScan<span class="icon icon-arrow-right2"></span></a></li>
                         </ul><!-- end links -->
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
@@ -503,13 +417,6 @@
                             <p>téléphone : 05 82 95 90 85</p>
                             <p>Mail : www.sigscan.eu</p>
                         </div>
-						
-						<!--<div class="footer-right">
-							<form method="get" action="#">
-								<input placeholder="Subscribe our newsletter.." name="search">
-								<i class="fa fa-envelope-o"></i>
-							</form>
-						</div>                        -->
                     </div><!-- end clearfix -->
                 </div><!-- end col -->
             </div><!-- end row -->
@@ -523,8 +430,6 @@
                     <p class="footer-company-name">All Rights Reserved. &copy; 2018 <a href="#">GoodWEB</a> Design By : 
 					<a href="https://html.design/">html design</a></p>
                 </div>
-
-                
             </div>
         </div><!-- end container -->
     </div><!-- end copyrights -->
@@ -536,7 +441,12 @@
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/portfolio.js"></script>
-    <script src="js/hoverdir.js"></script>    
+    <script src="js/hoverdir.js"></script>
+    <script>function afficher() {
+        document.getElementById("interface").style.display = "block";
+        document.getElementById("beacon").style.display = "block";
+    }
+    </script>
 
 </body>
 </html>
