@@ -561,12 +561,13 @@ li.social-links a {
     z-index: 2000;
     overflow: hidden;
     text-transform: uppercase;
+    padding-top: 20px;
     top: 45px;
     line-height: 3.5;
     padding: 0 10px 0 10px;
 }
 
-.main:hover > .main-content{
+.main:hover > .main-content {
     display: flex;
     position: absolute;
     background-color: rgba(255, 255, 255, 1);
@@ -575,9 +576,14 @@ li.social-links a {
     line-height: 3.5;
 }
 
-.main-content ul:after:hover{
+ul.main-content li a.second:hover{
     color: #dbb12a;
 }
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background-color: transparent !important;
+}
+
 
 /*------------------------------------------------------------------
     Banner Slider
@@ -2184,7 +2190,6 @@ select.mobile-device {
 }
 
 .footer {
-    padding: 90px 0 40px !important;
     color: #999;
     background-color: #393939;
 }
@@ -2329,7 +2334,7 @@ select.mobile-device {
 /* The search form */
 
 .footer-distributed .widget-title p{
-	padding-top: 40px;
+	padding-top: 10px;
 }
 
 .footer-distributed form {
@@ -3594,4 +3599,26 @@ select.mobile-device {
 
 #beacon {
     display: none;
+}
+
+.illustrationverticale, .illustrationhorizontale{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1000px) {
+    .illustrationhorizontale {
+        display: none;
+    }
+    .illustrationverticale {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1001px) {
+    .illustrationhorizontale {
+        display: block;
+    }
+    .illustrationverticale {
+        display: none;
+    }
 }
