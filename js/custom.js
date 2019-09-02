@@ -112,10 +112,10 @@
                 $.post(action, {
                         first_name: $('#first_name').val(),
                         last_name: $('#last_name').val(),
+                        company: $('#company').val(),
                         email: $('#email').val(),
                         phone: $('#phone').val(),
-                        select_service: $('#select_service').val(),
-                        select_price: $('#select_price').val(),
+                        subject: $('#subject').val(),
                         comments: $('#comments').val(),
                         verify: $('#verify').val()
                     },

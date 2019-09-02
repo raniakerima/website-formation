@@ -11,27 +11,26 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
 $first_name     = $_POST['first_name'];
 $last_name     = $_POST['last_name'];
+$company     = $_POST['company'];
 $email    = $_POST['email'];
 $phone   = $_POST['phone'];
-$select_price   = $_POST['select_price'];
-$select_service   = $_POST['select_service'];
 $subject  = $_POST['subject'];
 $comments = $_POST['comments'];
 $verify   = $_POST['verify'];
 
 if(trim($first_name) == '') {
-	echo '<div class="error_message">Attention! You must enter your name.</div>';
+	echo '<div class="error_message">Attention! Votre nom doit etre renseigné.</div>';
 	exit();
 }  else if(trim($email) == '') {
-	echo '<div class="error_message">Attention! Please enter a valid email address.</div>';
+	echo '<div class="error_message">Attention! Votre email doit etre renseigné.</div>';
 	exit();
 } else if(!isEmail($email)) {
-	echo '<div class="error_message">Attention! You have enter an invalid e-mail address, try again.</div>';
+	echo '<div class="error_message">Attention! Votre adresse email est invalide.</div>';
 	exit();
 }
 
 if(trim($comments) == '') {
-	echo '<div class="error_message">Attention! Please enter your message.</div>';
+	echo '<div class="error_message">Attention! Vous n\'avez pas entrer de message</div>';
 	exit();
 }
 
@@ -42,9 +41,6 @@ if(get_magic_quotes_gpc()) {
 
 // Configuration option.
 // Enter the email address that you want to emails to be sent to.
-// Example $address = "joe.doe@yourdomain.com";
-
-//$address = "example@themeforest.net";
 $address = "contact@pyrenees-software.com";
 
 
@@ -53,18 +49,18 @@ $address = "contact@pyrenees-software.com";
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
 
-$e_subject = 'You\'ve been contacted by ' . $first_name . '.';
+$e_subject = "[www.sigscan.eu] " . $subject;
 
 
 // Configuration option.
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "You have been contacted by $first_name. $first_name selected service of $select_service, their additional message is as follows. Customer max budge is $select_price, for this project." . PHP_EOL . PHP_EOL;
-$e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $first_name via email, $email or via phone $phone";
+$e_body = "$last_name $first_name a laissé un message a travers le site https://www.sigscan.eu." . PHP_EOL . PHP_EOL;
+$e_reply = "Nom: $last_name $first_name" . PHP_EOL . "Société: $company" . PHP_EOL . "Email: $email" . PHP_EOL . "Telephone $phone" . PHP_EOL . PHP_EOL;
+$e_content = "$comments" . PHP_EOL . PHP_EOL;
 
-$msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
+$msg = wordwrap( $e_body . $e_reply . $e_content , 70);
 
 $headers = "From: $email" . PHP_EOL;
 $headers .= "Reply-To: $email" . PHP_EOL;
@@ -78,13 +74,13 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 	echo "<fieldset>";
 	echo "<div id='success_page'>";
-	echo "<h1>Email Sent Successfully.</h1>";
-	echo "<p>Thank you <strong>$first_name</strong>, your message has been submitted to us.</p>";
+	echo "<h1>Votre message a été envoyé avec succès.</h1>";
+	echo "<p>Merci <strong>$last_name $first_name</strong>, votre message nous a été soumis.</p>";
 	echo "</div>";
 	echo "</fieldset>";
 
 } else {
 
-	echo 'ERROR!';
+	echo 'Erreur lors de l\'envoi de votre message. Merci de contacter contact@pyrenees-software.com';
 
 }
