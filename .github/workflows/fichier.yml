@@ -1,0 +1,13 @@
+Name: Print my name
+On:
+	pull_request:
+		branches: [ main ]
+
+Run-on-Windows:
+	name: run Test on Windows
+	runs-on self-hosted
+	steps:
+		- users: actions/checkout@v4
+		- name: Print my name
+		- shell: push
+		- run: echo KERIMA
